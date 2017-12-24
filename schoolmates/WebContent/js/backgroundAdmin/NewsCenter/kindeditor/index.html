@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+	&lt;strong&gt;HTML内容&lt;/strong&gt;
+	</textarea>
+
+	<button onclick="getData()">get</button>
+
+	<script charset="utf-8" src="kindeditor-all.js"></script>
+	<script charset="utf-8" src="lang/zh-CN.js"></script>
+	<script>
+	        KindEditor.ready(function(K) {
+	                window.editor = K.create('#editor_id');
+	        });
+
+	        function getData(){
+	        	var html = editor.html();
+	        	editor.sync();
+	        	html = document.getElementById('editor_id').value;
+
+	        	console.log(html)
+	        }
+	        
+
+	</script>
+</body>
+</html>

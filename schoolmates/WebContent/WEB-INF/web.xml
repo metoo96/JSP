@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5"> 
+  <display-name>schoolmates</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--BackgroundAdmin restart -->
+   <servlet>
+    <description></description>
+    <display-name>AdminLoginIndex</display-name>
+    <servlet-name>AdminLoginIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.AdminLoginIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLoginIndex</servlet-name>
+    <url-pattern>/Admin/Login/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewsCenterAddNewsPage</display-name>
+    <servlet-name>NewsCenterAddNewsPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.NewsCenterAddNewsPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsCenterAddNewsPage</servlet-name>
+    <url-pattern>/NewsCenter/addNewsPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewsCenterIndex</display-name>
+    <servlet-name>NewsCenterIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.NewsCenterIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsCenterIndex</servlet-name>
+    <url-pattern>/NewsCenter/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewsCenterDelNews</display-name>
+    <servlet-name>NewsCenterDelNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.NewsCenterDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsCenterDelNews</servlet-name>
+    <url-pattern>/NewsCenter/delNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewsCenterShowNewsPage</display-name>
+    <servlet-name>NewsCenterShowNewsPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.NewsCenterShowNewsPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsCenterShowNewsPage</servlet-name>
+    <url-pattern>/NewsCenter/showNewsPage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>NewsCenterEditNews</display-name>
+    <servlet-name>NewsCenterEditNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.NewsCenterEditNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsCenterEditNews</servlet-name>
+    <url-pattern>/NewsCenter/editNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateOrganizeIndex</display-name>
+    <servlet-name>SchoolmateOrganizeIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateOrganizeIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateOrganizeIndex</servlet-name>
+    <url-pattern>/SchoolmateOrganize/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateOrganizeDelnews</display-name>
+    <servlet-name>SchoolmateOrganizeDelnews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateOrganizeDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateOrganizeDelnews</servlet-name>
+    <url-pattern>/SchoolmateOrganize/delNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateOrganizeeditPage</display-name>
+    <servlet-name>SchoolmateOrganizeeditPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateOrganizeEditPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateOrganizeeditPage</servlet-name>
+    <url-pattern>/SchoolmateOrganize/editPage</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateOrganizeAddNewsIndex</display-name>
+    <servlet-name>SchoolmateOrganizeAddNewsIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateOrganizeAddNewsIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateOrganizeAddNewsIndex</servlet-name>
+    <url-pattern>/SchoolmateOrganize/addNewIndex</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateOrganizeShowIndexPage</display-name>
+    <servlet-name>SchoolmateOrganizeShowIndexPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateOrganizeShowIndexPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateOrganizeShowIndexPage</servlet-name>
+    <url-pattern>/SchoolmateOrganize/showIndexPage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>SchoolmateActivityIndex</display-name>
+    <servlet-name>SchoolmateActivityIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateActivityIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateActivityIndex</servlet-name>
+    <url-pattern>/SchoolmateActivity/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateActivityAddActivity</display-name>
+    <servlet-name>SchoolmateActivityAddActivity</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateActivityAddActivityController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateActivityAddActivity</servlet-name>
+    <url-pattern>/SchoolmateActivity/addActivity</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateActivityDelNews</display-name>
+    <servlet-name>SchoolmateActivityDelNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateActivityDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateActivityDelNews</servlet-name>
+    <url-pattern>/SchoolmatesActivity/delNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateActivityEditPage</display-name>
+    <servlet-name>SchoolmateActivityEditPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateActivityEditPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateActivityEditPage</servlet-name>
+    <url-pattern>/SchoolmateActivity/editPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateActivityshowDetail</display-name>
+    <servlet-name>SchoolmateActivityshowDetail</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateActivityShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateActivityshowDetail</servlet-name>
+    <url-pattern>/SchoolmateActivity/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateResIndex</display-name>
+    <servlet-name>SchoolmateResIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateResIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateResIndex</servlet-name>
+    <url-pattern>/SchoolmateRes/index</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateResDelNews</display-name>
+    <servlet-name>SchoolmateResDelNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateResDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateResDelNews</servlet-name>
+    <url-pattern>/SchoolmateRes/delNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateResShowNewsPage</display-name>
+    <servlet-name>SchoolmateResShowNewsPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateResShowNewsPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateResShowNewsPage</servlet-name>
+    <url-pattern>/SchoolmateRes/showNewsPage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>SchoolmateResEditNews</display-name>
+    <servlet-name>SchoolmateResEditNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateResEditNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateResEditNews</servlet-name>
+    <url-pattern>/SchoolmateRes/editNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateResAddNewsPage</display-name>
+    <servlet-name>SchoolmateResAddNewsPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateResAddNewsPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateResAddNewsPage</servlet-name>
+    <url-pattern>/SchoolmateRes/addNewsPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateServerIndex</display-name>
+    <servlet-name>SchoolmateServerIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateServerIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateServerIndex</servlet-name>
+    <url-pattern>/SchoolmateServer/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateServerAddNewServer</display-name>
+    <servlet-name>SchoolmateServerAddNewServer</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateServerAddNewServerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateServerAddNewServer</servlet-name>
+    <url-pattern>/SchoolmateServer/addNewServer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateServerDelNewServer</display-name>
+    <servlet-name>SchoolmateServerDelNewServer</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateServerDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateServerDelNewServer</servlet-name>
+    <url-pattern>/SchoolmateServer/delNews</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateServershowNewsPageServer</display-name>
+    <servlet-name>SchoolmateServershowNewsPageServer</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateServerShowNewsPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateServershowNewsPageServer</servlet-name>
+    <url-pattern>/SchoolmateServer/showNewsPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateMienIndex</display-name>
+    <servlet-name>SchoolmateMienIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateMienIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateMienIndex</servlet-name>
+    <url-pattern>/SchoolmateMien/index</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ <servlet>
+    <description></description>
+    <display-name>SchoolmateMienDelNews</display-name>
+    <servlet-name>SchoolmateMienDelNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateMienDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateMienDelNews</servlet-name>
+    <url-pattern>/SchoolmateMien/delNews</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateMienAddMien</display-name>
+    <servlet-name>SchoolmateMienAddMien</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateMienAddMienController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateMienAddMien</servlet-name>
+    <url-pattern>/SchoolmateMien/addMien</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+    <description></description>
+    <display-name>SchoolmateMienEditMien</display-name>
+    <servlet-name>SchoolmateMienEditMien</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateMienEditMienController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateMienEditMien</servlet-name>
+    <url-pattern>/SchoolmateMien/editMien</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+    <description></description>
+    <display-name>SchoolmateMienShowNewsPage</display-name>
+    <servlet-name>SchoolmateMienShowNewsPage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateMienShowNewsPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateMienShowNewsPage</servlet-name>
+    <url-pattern>/SchoolmateMien/showNewsPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>SchoolmateMienSetHeadImage</display-name>
+    <servlet-name>SchoolmateMienSetHeadImage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmateMienSetHeadImageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmateMienSetHeadImage</servlet-name>
+    <url-pattern>/SchoolmateMien/setHeadImage</url-pattern>
+  </servlet-mapping>
+  
+ 
+   <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishIndex</display-name>
+    <servlet-name>SchoolmatePublishIndex</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishIndex</servlet-name>
+    <url-pattern>/SchoolmatePublish/index</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishAddPublish</display-name>
+    <servlet-name>SchoolmatePublishAddPublish</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishAddPublishController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishAddPublish</servlet-name>
+    <url-pattern>/SchoolmatePublish/addPublish</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishDelNews</display-name>
+    <servlet-name>SchoolmatePublishDelNews</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishDelNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishDelNews</servlet-name>
+    <url-pattern>/SchoolmatePublish/delNews</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishEditDetail</display-name>
+    <servlet-name>SchoolmatePublishEditDetail</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishEditDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishEditDetail</servlet-name>
+    <url-pattern>/SchoolmatePublish/editDetail</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishSetHeadImage</display-name>
+    <servlet-name>SchoolmatePublishSetHeadImage</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishSetHeadImageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishSetHeadImage</servlet-name>
+    <url-pattern>/SchoolmatePublish/setHeadImage</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishSetContent</display-name>
+    <servlet-name>SchoolmatePublishSetContent</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishSetContentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishSetContent</servlet-name>
+    <url-pattern>/SchoolmatePublish/setContent</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>SchoolmatePublishSetContent1</display-name>
+    <servlet-name>SchoolmatePublishSetContent1</servlet-name>
+    <servlet-class>com.schoolmates.admin.controller.SchoolmatePublishSetContent1Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchoolmatePublishSetContent1</servlet-name>
+    <url-pattern>/SchoolmatePublish/setContent1</url-pattern>
+  </servlet-mapping>
+  
+  <!--Home restart -->
+   <servlet>
+    <description></description>
+    <display-name>HomeIndex</display-name>
+    <servlet-name>HomeIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeIndex</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>HomeIndexsubPage</display-name>
+    <servlet-name>HomeIndexsubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeIndexSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeIndexsubPage</servlet-name>
+    <url-pattern>/Home/Index/subPage</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <description></description>
+    <display-name>HomeNewsCenterIndex</display-name>
+    <servlet-name>HomeNewsCenterIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeNewsCenterIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeNewsCenterIndex</servlet-name>
+    <url-pattern>/Home/NewsCenter/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeNewsCenterSubPage</display-name>
+    <servlet-name>HomeNewsCenterSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeNewsCenterSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeNewsCenterSubPage</servlet-name>
+    <url-pattern>/Home/NewsCenter/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeNewsCenterShowDetail</display-name>
+    <servlet-name>HomeNewsCenterShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeNewsCenterShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeNewsCenterShowDetail</servlet-name>
+    <url-pattern>/Home/NewsCenter/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateActivedIndex</display-name>
+    <servlet-name>HomeSchoolmateActivedIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateActivedIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateActivedIndex</servlet-name>
+    <url-pattern>/Home/SchoolmateActived/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateActivedSubPage</display-name>
+    <servlet-name>HomeSchoolmateActivedSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateActivedSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateActivedSubPage</servlet-name>
+    <url-pattern>/Home/SchoolmateActived/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateActivedShowDetail</display-name>
+    <servlet-name>HomeSchoolmateActivedShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateActivedShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateActivedShowDetail</servlet-name>
+    <url-pattern>/Home/SchoolmateActived/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateResourcesIndex</display-name>
+    <servlet-name>HomeSchoolmateResourcesIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateResourcesIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateResourcesIndex</servlet-name>
+    <url-pattern>/Home/SchoolmateResources/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateResourcesSubPage</display-name>
+    <servlet-name>HomeSchoolmateResourcesSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateResourcesSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateResourcesSubPage</servlet-name>
+    <url-pattern>/Home/SchoolmateResources/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateResourcesShowDetail</display-name>
+    <servlet-name>HomeSchoolmateResourcesShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateResourcesShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateResourcesShowDetail</servlet-name>
+    <url-pattern>/Home/SchoolmateResources/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateOrganizeIndex</display-name>
+    <servlet-name>HomeSchoolmateOrganizeIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateOrganizeIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateOrganizeIndex</servlet-name>
+    <url-pattern>/Home/SchoolmateOrganize/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateOrganizeSubPage</display-name>
+    <servlet-name>HomeSchoolmateOrganizeSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateOrganizeSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateOrganizeSubPage</servlet-name>
+    <url-pattern>/Home/SchoolmateOrganize/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateOrganizeShowDetail</display-name>
+    <servlet-name>HomeSchoolmateOrganizeShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateOrganizeShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateOrganizeShowDetail</servlet-name>
+    <url-pattern>/Home/SchoolmateOrganize/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateMienIndex</display-name>
+    <servlet-name>HomeSchoolmateMienIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateMienIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateMienIndex</servlet-name>
+    <url-pattern>/Home/SchoolmateMien/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateMienSubPage</display-name>
+    <servlet-name>HomeSchoolmateMienSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateMienSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateMienSubPage</servlet-name>
+    <url-pattern>/Home/SchoolmateMien/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateMienShowDetail</display-name>
+    <servlet-name>HomeSchoolmateMienShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateMienShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateMienShowDetail</servlet-name>
+    <url-pattern>/Home/SchoolmateMien/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateServeIndex</display-name>
+    <servlet-name>HomeSchoolmateServeIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateServeIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateServeIndex</servlet-name>
+    <url-pattern>/Home/SchoolmateServe/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateServeSubPage</display-name>
+    <servlet-name>HomeSchoolmateServeSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateServeSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateServeSubPage</servlet-name>
+    <url-pattern>/Home/SchoolmateServe/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmateServeShowDetail</display-name>
+    <servlet-name>HomeSchoolmateServeShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmateServeShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmateServeShowDetail</servlet-name>
+    <url-pattern>/Home/SchoolmateServe/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmatePublishIndex</display-name>
+    <servlet-name>HomeSchoolmatePublishIndex</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmatePublishIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmatePublishIndex</servlet-name>
+    <url-pattern>/Home/SchoolmatePublish/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmatePublishSubPage</display-name>
+    <servlet-name>HomeSchoolmatePublishSubPage</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmatePublishSubPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmatePublishSubPage</servlet-name>
+    <url-pattern>/Home/SchoolmatePublish/subPage</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>HomeSchoolmatePublishShowDetail</display-name>
+    <servlet-name>HomeSchoolmatePublishShowDetail</servlet-name>
+    <servlet-class>com.schoolmates.home.controller.HomeSchoolmatePublishShowDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeSchoolmatePublishShowDetail</servlet-name>
+    <url-pattern>/Home/SchoolmatePublish/showDetail</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

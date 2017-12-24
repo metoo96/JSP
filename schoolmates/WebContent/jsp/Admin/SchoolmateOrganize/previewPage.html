@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>中山大学南方学院校友网</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/schoolmateOrganizeStyle.css">
+	</head>
+	<body style="min-width: 600px" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" width="1009">
+		<div class="header">
+			<span class="logo">
+				<img src="__PUBLIC__/res/logo.png">
+				<span class="sub-title">
+					校友网
+				</span>
+			</span>
+			
+		</div>
+		<div class="hr"></div>
+
+		<div class="navbar" id="navbar" align="center">
+			<span id="router-index">
+				<a href="{:U('Home/Index/index')}">
+					首页
+				</a>
+			</span>
+			<span id="router-newsCenter">
+				<a href="{:U('Home/NewsCenter/index')}">
+					新闻中心
+				</a>
+			</span>
+			<span id="router-schoolmate-organize">
+				<a href="{:U('Home/schoolmateOrganize/index')}">
+					校友总会
+				</a>
+			</span>
+			<span id="router-schoolmate-activied">
+				<a href="{:U('Home/schoolmateActived/index')}">
+					校友活动
+				</a>
+			</span>
+			<span id="router-schoolmate-record">
+				<a href="{:U('Home/schoolmateRecord/index')}">
+					班级录
+				</a>
+			</span>
+			<span id="router-schoolmate-donate">
+				<a href="{:U('Home/schoolmateDonate/index')}">
+					校友捐赠
+				</a>
+			</span>
+			<span id="router-school-periodical">
+				<a href="{:U('Home/schoolmateDonate/index')}">
+					校友期刊
+				</a>
+			</span>
+			<span id="router-schoolmate-serve">
+				<a href="{:U('Home/schoolmateServe/index')}">
+					校友服务
+				</a>
+			</span>
+			<span id="router-schoolmate-10">
+				<a href="http://xq10.nfu.edu.cn/">
+					<strong>校庆10周年</strong>
+					<img style="position: absolute;width: 4em;margin-top: -2em;margin-left: -2em" src="__PUBLIC__/res/ballon.png">
+				</a>
+			</span>
+		</div>
+
+		<div class="nav-navbar navbar" align="center">
+			<span>
+				<a href="#" class="nav-btn">
+					会长致辞
+				</a>
+			</span>
+			<span>
+				<a href="#" class="nav-btn">
+					组织章程
+				</a>
+			</span>
+			<span>
+				<a href="#" class="nav-btn">
+					地方校友分会
+				</a>
+			</span>
+			<span>
+				<a href="#" class="nav-btn">
+					院系校友分会
+				</a>
+			</span>
+
+			<!-- 
+				组织章程
+				会长致辞
+				地方校友分会
+				院系校友分会
+			 -->
+			<span id="position" style="position: absolute;right: 0;margin-top: 1px">
+				当前位置:校友组织
+			</span>
+		</div> 
+		
+		<div class="content organize-content">
+			<div class="frame">
+				<div class="main-content">
+					<div class="subject">
+						<h1 class="title">
+							{$content['title']}
+						</h1>
+						<div class="list">
+							<ul class="list-content">
+								<li>
+									<a href="./index?page={$nowPage}&paper={$list.id}">
+										{$content['indexTitle']}
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cont">
+							{$content['content']|stripslashes|htmlspecialchars_decode}
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<br>
+			<div align="center">
+				<div align="center" style="color:#fff;font-size: 13px;line-height: 1em">
+					<p>
+						联系地址：广州市从化区温泉大道882号中山大学南方学院行政楼A2-206
+						<span style="margin-left: 1em;">
+							 邮编:510970
+						</span>
+					</p>
+					<br>
+					<p>
+						版权所有：中山大学南方学院
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

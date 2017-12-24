@@ -1,0 +1,174 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*
+*	header
+*/
+.header{
+	background-color: #7d0000;
+	height: 8.6em;
+}
+.header .logo img{
+	height: 5.4em;
+	width: auto;
+	margin:1.5em 0 0 1.2em;
+}
+.header .sub-title{	
+	color: #ddd;
+	font-size: 1.5em;
+	margin-left: 1em;
+	position: absolute;
+	margin-top: 2.5em;
+}
+.header .functions{
+	right: 0;
+	font-size: 0.7em;
+	margin:1.9em 2.5em 0 0;
+	position: absolute;
+}
+.header .functions .welcome{
+	color: #fff;
+	margin-right: 1em
+}
+.header .functions .line{
+	color: #aaa;
+}
+.header .functions a:link {
+	text-decoration: none;
+	color:#fff;
+}
+.header .functions a:visited {
+	text-decoration: none;
+	color:#fff;
+}
+.header .functions a:hover {
+	text-decoration: none;
+	color: #999
+}
+.header .functions a:active {
+	text-decoration: none;
+	color:#fff;
+}
+.hr{
+	width: 100%;
+	height:1px;
+	background-color: #fff;
+}
+/*
+*	navbar
+*/
+.navbar{
+	overflow: hidden;
+	width: 100%;
+	background-color: #7d0000;
+	height: 2em;
+}
+.navbar #navSprite{
+	float: center;
+	width: 65px;
+	height: 2px;
+	background: #fff;
+	margin-top: 0px;
+	/*margin-left: 105px;*/
+	/*margin-left:-160px;*/
+	/*margin-left:-429px;*/
+	margin-left: -660px;
+	z-index: 0;
+	/*opacity: 0.5;*/
+
+}
+.navbar span{
+	line-height: 2.1em;
+	font-size: 0.9em;
+	margin-top: 1em; 
+	color:#fff;
+	padding:0 2.5em 0 2.5em;
+}
+.navbar a:link {
+	text-decoration: none;
+	color:#fff;
+}
+.navbar a:visited {
+	text-decoration: none;
+	color:#fff;
+}
+.navbar a:hover {
+	text-decoration: none;
+	color: #999
+}
+.navbar a:active {
+	text-decoration: none;
+	color:#red;
+}
+
+/*
+* nav navbar
+*/
+.nav-navbar{
+	background-color: #c04b4b;
+	height: 2.4em;
+	font-size: 0.9em;
+	width: 100%;
+	color:#fff;
+	overflow: hidden;
+}
+
+.nav-navbar span{
+	line-height: 2.5em;
+	font-size: 0.9em;
+	margin-top: 1em; 
+	color:#fff;
+	padding:0 2.5em 0 2.5em;
+}
+
+/*
+*	content
+*/
+.main-content{
+	
+}
+.news-center-content{
+	background-image: url("../res/lin-nybg.jpg");
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+.content{
+	padding-top: 1px;
+	/*width: 96%;
+	margin-left: 2%;*/
+
+	
+}
+
+.content .mainPage{
+
+}
+
+
+
+
+/*
+*	footer
+*/
+.footer{
+	width: 100%;
+	height: 70px;
+	margin-top: 0.5em;
+	background-image: url("../res/footer-bg.jpg");
+	background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
