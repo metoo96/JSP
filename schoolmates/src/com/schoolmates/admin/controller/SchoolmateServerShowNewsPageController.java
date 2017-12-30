@@ -26,7 +26,6 @@ public class SchoolmateServerShowNewsPageController extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
     
-
     public Connection conn = null;
 	
     public java.sql.PreparedStatement ps = null;

@@ -49,7 +49,7 @@ public class SchoolmateServerAddNewServerController extends HttpServlet{
 		PrintWriter pw = response.getWriter(); 
 		request.setCharacterEncoding("UTF-8");
 		Date d = new Date();
-		SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
+		SimpleDateFormat format = new SimpleDateFormat("YY-MM-dd HH:mm:ss");
 		String date = format.format(d);
 		String htmlData = request.getParameter("content") != null ? request.getParameter("content") : "";
 		news = new SchoolmateServer();

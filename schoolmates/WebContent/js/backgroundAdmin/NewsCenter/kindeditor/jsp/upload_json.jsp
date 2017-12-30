@@ -16,11 +16,32 @@
  */
 
 //文件保存目录路径
-String savePath = pageContext.getServletContext().getRealPath("/") + "attached/";
+//String savePath = pageContext.getServletContext().getRealPath("/") + "attached/";
 
 //文件保存目录URL
-String saveUrl  = request.getContextPath() + "/attached/";
+//String saveUrl  = request.getContextPath() + "/attached/";
 
+
+
+
+//重写了路径
+String savePath = "F:" + File.separator + "schoolmates"
+        + File.separator + "kindeditor" + File.separator;// 文件上传的路径
+String saveUrl = "F:" + File.separator + "schoolmates"
+                + File.separator + "kindeditor" + File.separator;// 文件上传的路径
+File savePathDir = new File(savePath);
+if (!savePathDir.exists()) {
+     savePathDir.mkdir();
+}
+File saveUrlDir = new File(savePath);
+if (!saveUrlDir.exists()) {
+     saveUrlDir.mkdir();
+}
+
+
+
+
+                
 //定义允许上传的文件扩展名
 HashMap<String, String> extMap = new HashMap<String, String>();
 extMap.put("image", "gif,jpg,jpeg,png,bmp");
@@ -105,10 +126,18 @@ while (itr.hasNext()) {
 			return;
 		}
 
+		
+		
+		
+		
+		
+		//重写了路径
 		JSONObject obj = new JSONObject();
 		obj.put("error", 0);
-		obj.put("url", saveUrl + newFileName);
+		//obj.put("url", saveUrl + newFileName);
+		obj.put("url", "/schoolmates/image/"+ ymd + "/"+ newFileName);
 		out.println(obj.toJSONString());
+		System.out.println(saveUrl+newFileName);
 	}
 }
 %>

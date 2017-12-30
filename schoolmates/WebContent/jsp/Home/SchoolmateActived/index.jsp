@@ -23,7 +23,7 @@
 			<span class="logo">
 				<img src="<%=basePath %>res/logo.png">
 				<span class="sub-title">
-					校友网
+					数字校园(校友网)
 				</span>
 			</span>
 		</div>

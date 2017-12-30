@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -44,8 +45,13 @@ public class SchoolmateMienSetHeadImageController extends HttpServlet{
     
     public SchoolmateMien news = null;
     
-    // 上传文件存储目录
-    private static final String UPLOAD_DIRECTORY = "upload";
+    // 定义常量,保存文件路径
+    private static final String FILE_PATH = "F:" + File.separator + "schoolmates"
+                + File.separator + "upload" + File.separator;// 文件上传的路径
+    
+    private static final String FILE_TEMP = "F:" + File.separator + "schoolmates"
+                + File.separator + "temp" + File.separator;;// 文件缓存路径
+
     // 上传配置
     private static final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB
     private static final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB
@@ -74,7 +80,17 @@ public class SchoolmateMienSetHeadImageController extends HttpServlet{
         // 设置内存临界值 - 超过后将产生临时文件并存储于临时目录中
         factory.setSizeThreshold(MEMORY_THRESHOLD);
         // 设置临时存储目录
-        factory.setRepository(new File(System.getProperty("java.io.tmpdir")));
+        File fileTemp = new File(FILE_TEMP);
+        if (!fileTemp.exists()){
+          fileTemp.mkdirs();
+        }
+        
+        File localDir = new File(FILE_PATH);
+        if (!localDir.exists()) {
+             localDir.mkdir();
+        }
+        // 设置临时存储目录
+        factory.setRepository(fileTemp);
  
         ServletFileUpload upload = new ServletFileUpload(factory);
          
@@ -89,26 +105,26 @@ public class SchoolmateMienSetHeadImageController extends HttpServlet{
 
         // 构造临时路径来存储上传的文件
         // 这个路径相对当前应用的目录
-        String uploadPath = getServletContext().getRealPath("./") + File.separator + UPLOAD_DIRECTORY;
-      
+        // String uploadPath = getServletContext().getRealPath("./") + File.separator + UPLOAD_DIRECTORY;
         // 如果目录不存在则创建
-        File uploadDir = new File(uploadPath);
-        if (!uploadDir.exists()) {
-            uploadDir.mkdir();
-        }
  
         try {
             // 解析请求的内容提取文件数据
             List<FileItem> formItems = upload.parseRequest(request);
             String filePath = null;
             String value = null;
+            String fileName = null;
+            //产生一个通用唯一识别符
+            String uuid = UUID.randomUUID().toString(); 
+            String uniqueId = uuid.replaceAll("-", "");
             if (formItems != null && formItems.size() > 0) {
                 // 迭代表单数据
                 for (FileItem item : formItems) {
                     // 处理不在表单中的字段
                     if (!item.isFormField()) {
-                        String fileName = new File(item.getName()).getName();
-                        filePath = uploadPath + File.separator + fileName;
+                        fileName = new File(item.getName()).getName();
+                        fileName = uniqueId+fileName;
+                        filePath = FILE_PATH + File.separator + fileName;
                         File storeFile = new File(filePath);
                         // 在控制台输出文件的上传路径
                         System.out.println(filePath);
@@ -126,7 +142,7 @@ public class SchoolmateMienSetHeadImageController extends HttpServlet{
                 }
             
                         news = new SchoolmateMien();
-                        news.setHead_url(filePath);
+                        news.setHead_url(fileName);
                         news.setId(Integer.parseInt(value));
                     	   try {
                             	SqlConnectionUtil.init();

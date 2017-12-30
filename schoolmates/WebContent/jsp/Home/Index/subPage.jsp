@@ -287,7 +287,7 @@
                                 News news = (News)newslist1.get(i);
                             %>
 							<div class="col-md-9 news-title">
-								<a href="/schoolmates/Home/Index/showDetail?newsId=<%=news.getNewsID()%>">
+								<a href="/schoolmates/Home/NewsCenter/showDetail?newsID=<%=news.getNewsID()%>">
 									<%=news.getTitle() %>
 								</a>
 							</div>
@@ -312,7 +312,7 @@
                                 SchoolmateActivity news = (SchoolmateActivity)newslist2.get(i);
                             %>
 							<div class="col-md-9 news-title">
-								<a href="/schoolmates/Home/Index/showDetail?id=<%=news.getId()%>">
+								<a href="/schoolmates/Home/SchoolmateActived/showDetail?id=<%=news.getId()%>">
 									<%=news.getTitle()%>
 								</a>
 							</div>
@@ -337,7 +337,7 @@
                                 News news = (News)newslist3.get(i);
                             %>
 							<div class="col-md-9 news-title" style="font-size:16px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:30px">
-								<a href="/schoolmates/Home/Index/showDetail?id=<%=news.getNewsID()%>">
+								<a href="/schoolmates/Home/SchoolmateResources/showDetail?newsID=<%=news.getNewsID()%>">
 									<%=news.getTitle() %>
 								</a>
 							</div>
@@ -364,13 +364,13 @@
                                 SchoolmatePublish news = (SchoolmatePublish)newslist4.get(i);
                             %>
 						<div class="col-xs-6" align="center">
-							<a target="_blank" href="<%=news.getDownload_url() %>">
-								<img style="width:80%;margin-top:2em" src="<%=news.getHead_image() %>" alt="">
+							<a target="_blank" href="/schoolmates/upload/<%=news.getHead_image() %>">
+								<img style="width:80%;margin-top:2em" src="/schoolmates/upload/<%=news.getHead_image() %>" alt="">
 							</a>
 							<div align="center" style="margin-top:16px">
 								
-									
-									<a href="<%=news.getDownload_url() %>" download>下载</a>
+									标题:<%=news.getTitle() %>
+									<a target="t_blank" href="/schoolmates/upload/<%=news.getHead_image() %>" download>下载</a>
 				
 							</div>
 						</div>
@@ -399,7 +399,7 @@
 						}
 						.mien-list img{
 							width:60%;
-							border-radius: 5px;
+							border-radius: 4px;
 						}
 
 						.mien-item .name{
@@ -419,9 +419,9 @@
                                 SchoolmateMien news = (SchoolmateMien)newslist5.get(i);
                             %>
 							<div class="mien-item row">
-								<a href="/schoolmates/Home/Index/mien?id=<%=news.getId()%>">
+								<a href="/schoolmates/Home/SchoolmateMien/showDetail?id=<%=news.getId()%>">
 									<div class="col-xs-3">
-										<img src="<%=news.getHead_url() %>" alt="">
+										<img src="/schoolmates/upload/<%=news.getHead_url() %>" alt="schoolmates">
 									</div>
 									
 									<div class="col-xs-9">
@@ -435,7 +435,6 @@
 								</a>
 							</div>
 							<%} %>
-					
 					</div>
 				</div>
 			</div>

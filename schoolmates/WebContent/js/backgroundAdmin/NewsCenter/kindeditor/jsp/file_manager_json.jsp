@@ -13,9 +13,34 @@
  */
 
 //根目录路径，可以指定绝对路径，比如 /var/www/attached/
-String rootPath = pageContext.getServletContext().getRealPath("/") + "attached/";
+//String rootPath = pageContext.getServletContext().getRealPath("/") + "attached/";
 //根目录URL，可以指定绝对路径，比如 http://www.yoursite.com/attached/
-String rootUrl  = request.getContextPath() + "/attached/";
+//String rootUrl  = request.getContextPath() + "/attached/";
+
+
+
+
+
+//路径重写部分
+String rootPath = "F:" + File.separator + "schoolmates"
+        + File.separator + "kindeditor" + File.separator;// 文件上传的路径
+String rootUrl = "F:" + File.separator + "schoolmates"
+                + File.separator + "kindeditor" + File.separator;// 文件上传的路径
+
+File savePathDir = new File(rootPath);
+if (!savePathDir.exists()) {
+     savePathDir.mkdir();
+}
+
+File saveUrlDir = new File(rootPath);
+if (!saveUrlDir.exists()) {
+     saveUrlDir.mkdir();
+}
+
+
+
+
+
 //图片扩展名
 String[] fileTypes = new String[]{"gif", "jpg", "jpeg", "png", "bmp"};
 

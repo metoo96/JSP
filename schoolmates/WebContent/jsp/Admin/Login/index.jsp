@@ -27,7 +27,7 @@
 	    <h1>网站后台登录</h1>
 	</div>
 		
-	<div style="width: 70%;margin-left: 15%">
+	<div style="width: 40%;margin-left: 30%">
 		<h3>登录</h3>
 		<hr>
 		  <div class="form-group">
